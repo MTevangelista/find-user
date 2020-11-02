@@ -1,10 +1,9 @@
+import Routes from './routes';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Find User</h1>
-    </div>
-  );
+    <Routes />
+  )
 }
 
 export default App;
