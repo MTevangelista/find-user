@@ -49,13 +49,10 @@ const Card = (props) => {
             </div>
 
             <footer>
-                <a
-                    href={props.html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Visualizar perfil
-                </a>
+                {props.html_url 
+                    ? <a href={props.html_url} target="_blank" rel="noopener noreferrer"> Visualizar perfil</a>
+                    : <a href="#disabled" disabled> Visualizar perfil</a>
+                }
             </footer>
 
         </article>

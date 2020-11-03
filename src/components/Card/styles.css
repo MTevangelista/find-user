@@ -83,7 +83,18 @@
     transition: all 0.5s;
 }
 
+.user-card footer a[disabled] {
+    opacity: .5;
+    cursor: default;
+}
+
 .user-card footer a:hover {
     background-color: rgb(32, 32, 71);
     color: #fff;
+}
+
+.user-card footer a[disabled]:hover {
+    background-color: whitesmoke;
+    color: rgb(117, 117, 117);
+    opacity: .5;
 }
