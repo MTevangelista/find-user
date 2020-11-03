@@ -27,7 +27,7 @@ const Navbar = (props) => {
 
             <div className="header-content">
                 <strong>{props.description}</strong>
-                <p>{props.totalUsers} usuários</p>
+                {props.totalUsers && <p>{props.totalUsers} usuários</p>}
             </div>
         </header>
     )
